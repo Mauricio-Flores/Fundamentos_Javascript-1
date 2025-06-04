@@ -1,47 +1,48 @@
 // Declaración de variables
-let numeroEntero = 2008;
-let numeroDecimal = 16;
-let cadenaTexto = "Rojo";
-let valorBooleano = true;
-let arregloNumeros = [1, 2, 3, 4];
-let objetoPersona = { nombre: "Ana", edad: 30 };
-let valorIndefinido;
-let valorNulo = null;
-const mes = "Junio";
+var edad = 25; // Menos segura
+let anioGraduacion = 2022; // Tipo numérico - INT
+let temperatura = 36.6; // Numérico con parte decimal - FLOAT
+let ciudad = "Santiago"; // string
+let soyEstudiante = true; // Valor verdadero o falso - Boolean
+let listaFrutas = ["Manzana", "Platano", "Uva", "Pera"]; // Lista de elementos - Array
+let coche = { marca: "Toyota", modelo: "Corolla" }; // Diccionario - Object
+let datoIndefinido; // Sin valor asignado - undefined
+let sinValor = null; // Valor nulo - Null
+const pais = "Chile"; // Constante - No varía
 
 // Funciones para mostrar cada valor con alert
-function mostrarNumeroEntero() {
-  alert("Año nacimiento: " + numeroEntero);
+function mostrarAnioGraduacion() {
+  alert("Año de graduación: " + anioGraduacion);
 }
 
-function mostrarNumeroDecimal() {
-  alert("Edad: " + numeroDecimal);
+function mostrarTemperatura() {
+  alert("Temperatura corporal: " + temperatura);
 }
 
-function mostrarCadenaTexto() {
-  alert("Color favorito: " + cadenaTexto);
+function mostrarCiudad() {
+  alert("Ciudad actual: " + ciudad);
 }
 
-function mostrarBooleano() {
-  alert("Valor booleano: " + valorBooleano);
+function mostrarsoyEstudiante() {
+  alert("Soy estudiante?: " + esEstudiante);
 }
 
-function mostrarArreglo() {
-  alert("Arreglo de números: " + arregloNumeros);
+function mostrarListaFrutas() {
+  alert("Lista de frutas: " + listaFrutas);
 }
 
-function mostrarObjeto() {
-  alert("Objeto persona: " + JSON.stringify(objetoPersona));
+function mostrarCoche() {
+  alert("Coche: " + JSON.stringify(coche));
 }
 
-function mostrarIndefinido() {
-  alert("Valor indefinido: " + valorIndefinido);
+function mostrarDatoIndefinido() {
+  alert("Dato indefinido: " + datoIndefinido);
 }
 
-function mostrarNulo() {
-  alert("Valor nulo: " + valorNulo);
+function mostrarSinValor() {
+  alert("Sin valor (nulo): " + sinValor);
 }
 
-function mostrarConstante() {
-  alert("Constante mes: " + mes);
+function mostrarConstantePais() {
+  alert("País: " + pais);
 }
