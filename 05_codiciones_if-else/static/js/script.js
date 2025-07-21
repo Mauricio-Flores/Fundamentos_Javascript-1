@@ -31,7 +31,7 @@ function contraseña() {
 
 function parimpar() {
   let par = parseInt(prompt("ingrese numero"));
-  if (par & 2 == 0) {
+  if (par & 2 === 0) {
     alert("es par")
   } else {
     alert("es impar")
