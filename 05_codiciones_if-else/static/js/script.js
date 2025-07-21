@@ -44,9 +44,9 @@ function temperatura() {
   let temp = parseInt(prompt("ingrese temperatura"));
   if (temp >= 30) {
     alert("Hace calor")
-  } else if(temp >= 15 && temp <30) { 
+  } else if (temp >= 15 && temp < 30) {
     alert("Agradable")
-  } else if(remp >= -5 && temp <=15){
+  } else if (remp >= -5 && temp <= 15) {
     alert("Hace frio")
   } else {
     alert("Ingrese valor")
@@ -123,5 +123,42 @@ function permisoParaConducir() {
     alert("Puede conducir")
   } else {
     alert("no puede conducir")
+  }
+}
+
+function encontrarPalabraLarga() {
+  let pal1 = prompt("Ingresa primera palabra");
+  let pal2 = prompt("ingresar segunda palabra");
+  if (pal1 == "" && pal2 == "") {
+    alert("ingrese algún valor para trabajar")
+  } else if (pal1.length < pal2.length) {
+    alert(`La palabra mas larga es ${pal2} con ${pal2.length} carácteres.`)
+  } else if (oal1.length == pal2.length) {
+    alert(`Las palabras ${pal2} y ${pal1} tienen el m ismo larcon con :\n
+      ${pal1.length} carácteres`)
+  } else {
+    alert(`La palabra más larga es ${pal1} con ${pal1.length} carácteres.`)
+  }
+}
+
+function validarCorreo() {
+  let email = prompt("por favor, ingresar correo:");
+  if (email == "") {
+    alert("Ingresa un valor correcto")
+  } else if (email.includes("@")) {
+    alert(`El correo ${email} es valido`)
+  } else {
+    alert(`El correo ${gmail} es inválido`)
+  }
+}
+
+function validarNumero() {
+  let numero = parseInt(prompt("ingresa Numero"));
+  if (numero.includes("-")) {
+    alert(`El numero ${numero} es negativo`);
+  } else if (numero == 0){
+    alert(`El numero ingresado es 0`)
+  } else {
+    alert("El numero ${numero} es positivo")
   }
 }
