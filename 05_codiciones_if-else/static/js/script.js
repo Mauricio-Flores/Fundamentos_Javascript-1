@@ -143,22 +143,45 @@ function encontrarPalabraLarga() {
 
 function validarCorreo() {
   let email = prompt("por favor, ingresar correo:");
-  if (email == "") {
-    alert("Ingresa un valor correcto")
-  } else if (email.includes("@")) {
+  if (email.includes("@")) {
     alert(`El correo ${email} es valido`)
   } else {
     alert(`El correo ${gmail} es inválido`)
   }
 }
 
-function validarNumero() {
-  let numero = parseInt(prompt("ingresa Numero"));
-  if (numero.includes("-")) {
-    alert(`El numero ${numero} es negativo`);
-  } else if (numero == 0){
-    alert(`El numero ingresado es 0`)
+function validarNumeros() {
+  let numero =
+    parseInt(
+      prompt("ingresa Numero")
+    );
+  if (numero > 0) {
+    alert(`El numero ${numero} es positivo`);
+  } else if (numero == 0) {
+    alert(`El numero ${numero} ingresado es invalido`);
   } else {
-    alert("El numero ${numero} es positivo")
+    alert(`El numero ${numero} es negativo`);
+  }
+}
+
+function ingresarHora() {
+  let horaActual = parseInt(prompt("ingresar Hora en formato 24Hrs"));
+  if (horaActual < 12) {
+    alert(`buenos dias son las ${horaActual} horas.`)
+  } else if (horaActual <= 12 && horaActual <= 18) {
+    alert(`Buenas Tardes son las ${horaActual}`)
+  } else if (horaActual > 24) {
+    alert(`La hora ${horaActual} ingresada es incorrecta`)
+  } else {
+    alert("Buenas noches")
+  }
+}
+
+function ingresarPalabra2() {
+  let palE = prompt("por favor, ingresar Palabra:");
+  if (palE.includes("e")) {
+    alert(`la palabra ${palE} contiene "e"`)
+  } else {
+    alert(`la palabra ${palE} no contiene "e"`)
   }
 }
